@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET Játék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+    <h1 class="title">SET Játék</h1>
+
+    <ul class="option-select">
+        <li>
+            <div><a href="https://fejlesztojatekvilag.hu/uploaded/set_magyar_szabaly.pdf">Játékszabályok</a></div>
+        </li>
+        <li>
+            <div>
+                Játék módja
+                <select id="mode">
+                    <option value="1">Gyakorló</option>
+                    <option value="2">Verseny</option>
+                </select>
+            </div>
+        </li>
+        <li>
+            <div>
+                Játékosok száma
+                <select class="select" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <ul class="player-names">
+                    <li id="name1">
+                        Játékos1 neve: <input class="input-names">
+                    </li>
+                    <li id="name2" style="display: none">
+                        Játékos2 neve: <input class="input-names">
+                    </li>
+                    <li id="name3" style="display: none">
+                        Játékos3 neve: <input class="input-names">
+                    </li>
+                    <li id="name4" style="display: none">
+                        Játékos4 neve: <input class="input-names">
+                    </li>
+                    <li id="name5" style="display: none">
+                        Játékos5 neve: <input class="input-names">
+                    </li>
+                    <li id="name6" style="display: none">
+                        Játékos6 neve: <input class="input-names">
+                    </li>
+                    <li id="name7" style="display: none">
+                        Játékos7 neve: <input class="input-names">
+                    </li>
+                    <li id="name8" style="display: none">
+                        Játékos8 neve: <input class="input-names">
+                    </li>
+                    <li id="name9" style="display: none">
+                        Játékos9 neve: <input class="input-names">
+                    </li>
+                    <li id="name10" style="display: none">
+                        Játékos10 neve: <input class="input-names">
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li id="more-options-li">
+            <p class="p-more" id="more-options">Egyéb beállítások</p>
+            <ul style="display: none" class="more">
+                <li>
+                    Van-e SET a leosztásban gomb
+                    <select class="select" id="set-exists">
+                        <option value="0">Nem</option>
+                        <option value="1">Igen</option>
+                    </select>
+                </li>
+                <li>
+                    SET-et mutató gomb
+                    <select class="select" id="set-show">
+                        <option value="0">Nem</option>
+                        <option value="1">Igen</option>
+                    </select>
+                </li>
+                <li>
+                    Automatikus +3 lapozás
+                    <select class="select" id="automatic">
+                        <option value="0">Nem</option>
+                        <option value="1">Igen</option>
+                    </select>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="start"><button class="button">Start</button></div>
+        </li>
+    </ul>
+
+    <div id="game" style="display: none">
+        <table>
+            <tr>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+            </tr>
+            <tr>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+            </tr>
+            <tr>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+                <td><img width="150" height="200"></td>
+            </tr>
+            
+        </table>
+        <div class="score">
+            <button class="game-button" id="back-button">Vissza</button>
+            <button class="game-button" id="van-set-button" style="margin-top: 50px">Van SET?</button>
+            <button class="game-button" id="hol-van-set-button">Hol van a SET?</button>
+            <div id="name-score-game-tab">
+                <p><span class="names">Player1</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player2</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player3</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player4</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player5</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player6</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player7</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player8</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player9</span><br>Score: <span class="points">0</span></p>
+                <p><span class="names">Player10</span><br>Score: <span class="points">0</span></p>
+            </div> 
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
